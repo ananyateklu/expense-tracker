@@ -13,8 +13,8 @@ router.route('/').get((req, res) => {
 router.route('/add').post((req,res) => {
     const expensetype = req.body.expensetype;
     const itemname = req.body.itemname;
-    const amount = req.body.amount;
-    const description = Number(req.body.description);
+    const amount = Number(req.body.amount);
+    const description = req.body.description;
     const date = Date.parse(req.body.date);
 
     const newExpense = new Expense({
