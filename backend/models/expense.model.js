@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const expenseSchema = new Schema({
-    expenseType: { type: String, required: true},
-    itemName: { type: String, required: true},
+    expensetype: { type: String, required: true},
+    itemname: { type: String, required: true},
     amount: { type: Number, required: true},
     description: { type: String, required: false},
     date: { type: Date, required: true},
