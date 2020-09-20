@@ -20,6 +20,17 @@ connection.once('open', () => {
     console.log("MongoDB successfully connected");
 })
 
+//Use the routes here 
+const expensesRouter = require('./routes/expenses');
+const incomeRouter = require('./routes/income');
+const usersRouter = require('./routes/users');
+
+
+app.use('/expenses', exercisesRouter);
+app.ust('/income', incomeRouter);
+app.use('/users', usersRouter);
+
+
 //server listens to the given port
 app.listen(port, function(error) {
     if(error) {
