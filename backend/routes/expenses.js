@@ -25,6 +25,13 @@ router.route('/add').post((req,res) => {
         date
 });
 
+//This gets an expense from the database with its id 
+router.route('/:id').get((req,res) => {
+    Expense.findById(req.params.id)
+    .then(expense => res.json(expense))
+    .catch(err => res.status(400).json('Error: ' + err));
+});
+
 newExpense.save()
 .then(() => res.json('Expense added!'))
 .catch(err => res.status(400).json('Error:' + err));
