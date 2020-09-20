@@ -26,7 +26,7 @@ const incomeRouter = require('./routes/income');
 const usersRouter = require('./routes/users');
 
 
-app.use('/expenses', exercisesRouter);
+app.use('/expenses', expensesRouter);
 app.ust('/income', incomeRouter);
 app.use('/users', usersRouter);
 
