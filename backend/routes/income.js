@@ -16,8 +16,8 @@ router.route('/add').post((req,res) => {
     const date = Date.parse(req.body.date);
 
     const newIncome = new Income({
-        incometype: incometype,
-        amount: amount,
+        incometype,
+        amount,
         date
 });
 
