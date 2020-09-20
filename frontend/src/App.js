@@ -21,6 +21,9 @@ function App() {
         <Route path="/edit/:id" exact component={EditExpense}/>
         <Route path="/create" exact component={CreateExpense}/>
         <Route path="/user" exact component={CreateUser}/>
+        <Route path="/createincome" exact component={CreateIncome}/>
+        <Route path="/income" exact component={IncomeList}/>
+        <Route path="/editIncome" exact component={EditIncome}/>
         
     </Router>
   );
