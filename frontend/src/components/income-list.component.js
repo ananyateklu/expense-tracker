@@ -5,7 +5,7 @@ export default class IncomeList extends Component {
     render() {
         return (
            <div>
-               <p>Place holder</p>
+               <p>Income list</p>
            </div>
 
         )

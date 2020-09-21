@@ -5,7 +5,7 @@ export default class CreateExpense extends Component {
     render() {
         return (
            <div>
-               <p>Place holder</p>
+               <p>CreateExpense</p>
            </div>
 
         )

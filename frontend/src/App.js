@@ -24,7 +24,7 @@ function App() {
         <Route path="/createincome" exact component={CreateIncome}/>
         <Route path="/income" exact component={IncomeList}/>
         <Route path="/editIncome" exact component={EditIncome}/>
-        
+     
     </Router>
   );
  
