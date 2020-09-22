@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
-
-import Navbar from "./components/navbar.component";
+import Header from "./components/header.component";
 import ExpensesList from "./components/expenses-list.component";
 import EditExpense from "./components/edit-expense.component";
 import CreateExpense from "./components/create-expense.component";
@@ -15,7 +14,7 @@ import IncomeList from "./components/income-list.component";
 function App() {
   return (
     <Router>
-        <Navbar/>
+        <Header/>
         <br/>
         <Route path="/" exact component={ExpensesList}/>
         <Route path="/edit/:id" exact component={EditExpense}/>
