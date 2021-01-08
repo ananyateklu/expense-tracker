@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Chart from "react-apexcharts";
-import Entry from "./entry";
+// import Entry from "./entry";
+import Card from "./card";
+// import { GiKnifeFork } from 'react-icons/gi';
 // const Expense = (props) => (
 //   <tr>
 //     <td>{props.expense.expensetype}</td>
@@ -62,7 +64,9 @@ export default class ExpensesList extends Component {
         ],
       },
     };
+   
   }
+  
 
   componentDidMount() {
     axios
@@ -74,6 +78,7 @@ export default class ExpensesList extends Component {
         console.log(error);
       });
   }
+  
 
   deleteExpense(id) {
     this.setState({
@@ -84,8 +89,18 @@ export default class ExpensesList extends Component {
       window.location = "/";
     });
   }
+  createEntry(expenseone) {
+    return (
+    <Card 
+      key={expenseone._id}
+      expensetype={expenseone.expensetype}
+      itemname={expenseone.itemname}
+      amount={expenseone.amount}
+      date={expenseone.date}
+    />
+    );
+  }
 
-  fucntion
 
   render() {
     return (
@@ -100,9 +115,7 @@ export default class ExpensesList extends Component {
             />
           </div>
           <div className="col">
-            <Entry />
-            <Entry />
-            <Entry />
+            {this.state.expenses.map(this.createEntry)}
           </div>
         </div>
       </div>
