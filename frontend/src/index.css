@@ -53,3 +53,17 @@ li a:hover {
   padding: 12px;
   text-decoration: none;
 }
+
+.list-group .list-group-item {
+  background-color: whitesmoke;
+  margin: 1%;
+}
+
+.items {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+}
+.etype {
+  padding: 5px;
+}
