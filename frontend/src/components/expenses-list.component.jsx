@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Chart from "react-apexcharts";
-// import Entry from "./entry";
-import Card from "./card";
+import Entry from "./entry";
 // import { GiKnifeFork } from 'react-icons/gi';
 // const Expense = (props) => (
 //   <tr>
@@ -91,7 +90,7 @@ export default class ExpensesList extends Component {
   }
   createEntry(expenseone) {
     return (
-    <Card 
+    <Entry 
       key={expenseone._id}
       expensetype={expenseone.expensetype}
       itemname={expenseone.itemname}
