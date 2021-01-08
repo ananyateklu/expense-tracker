@@ -1,20 +1,33 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default function Entry() {
 
-    return (
-        <div className="list-group">
-        <div className="list-group-item list-group-item-action flex-column align-items-start">
-          <div className="d-flex w-100 justify-content-between">
-          <div className="mb-1">U</div>
-            <h5 className="mb-1">Rent</h5>
-            <small>$65.99</small>
-          </div>
-             <small >3 days ago</small>
-       
-         
-         
-        </div>
-      </div>
-    );
+
+export default class Entry extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+        }
+  
+    
+    }
+   
+        render() {
+           return (
+            <div className="list-group">
+                <div className="list-group-item list-group-item-action flex-column align-items-start">
+                <div className="items">
+                    <div className="etype">
+                    {this.props.expensetype}
+                   
+                    
+                    </div>
+                    <h5 className="iname">{this.props.itemname}</h5>
+                    <small>{this.props.amount}</small>
+                </div>
+                <small>{this.props.date}</small>
+                </div>
+            </div>
+
+        );
+    }
 }
