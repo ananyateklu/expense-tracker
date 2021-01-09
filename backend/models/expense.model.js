@@ -6,6 +6,7 @@ const expenseSchema = new Schema({
     itemname: { type: String, required: true},
     amount: { type: Number, required: true},
     description: { type: String, required: false},
+    icon: {type: String, required: true},
     date: { type: Date, required: true},
 }, {
     timestamps: true,

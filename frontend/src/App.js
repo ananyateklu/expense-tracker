@@ -9,11 +9,12 @@ import CreateUser from "./components/create-user.component";
 import CreateIncome from "./components/create-income.component";
 import EditIncome from "./components/edit-income.component";
 import IncomeList from "./components/income-list.component";
+import "./App.css"
 
 
 function App() {
   return (
-    <Router>
+       <Router>
         <Header/>
         <br/>
         <Route path="/" exact component={ExpensesList}/>
@@ -23,8 +24,10 @@ function App() {
         <Route path="/createincome" exact component={CreateIncome}/>
         <Route path="/income" exact component={IncomeList}/>
         <Route path="/editIncome" exact component={EditIncome}/>
-     
-    </Router>
+      </Router>
+  
+      
+ 
   );
  
 }

@@ -15,6 +15,7 @@ router.route('/add').post((req,res) => {
     const itemname = req.body.itemname;
     const amount = Number(req.body.amount);
     const description = req.body.description;
+    const icon = req.body.icon;
     const date = Date.parse(req.body.date);
 
     const newExpense = new Expense({
@@ -22,6 +23,7 @@ router.route('/add').post((req,res) => {
         itemname,
         amount,
         description,
+        icon,
         date
 });
 
