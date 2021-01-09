@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Chart from "react-apexcharts";
 import Entry from "./entry";
+import "./components.css";
 // import { GiKnifeFork } from 'react-icons/gi';
 // const Expense = (props) => (
 //   <tr>
@@ -72,6 +73,7 @@ export default class ExpensesList extends Component {
       .get("http://localhost:4000/expenses/")
       .then((response) => {
         this.setState({ expenses: response.data });
+        console.log(this.state.expenses);
       })
       .catch((error) => {
         console.log(error);
@@ -95,11 +97,12 @@ export default class ExpensesList extends Component {
       expensetype={expenseone.expensetype}
       itemname={expenseone.itemname}
       amount={expenseone.amount}
+      description={expenseone.description}
+      icon={expenseone.icon}
       date={expenseone.date}
     />
     );
   }
-
 
   render() {
     return (
