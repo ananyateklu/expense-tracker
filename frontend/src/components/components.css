@@ -1,16 +1,132 @@
 
 img {
-    width: 60%;
+    width: 65%;
+    background-color: #E8FBFE ;
+    padding: 5px;
+    border-radius: 10px;
+}
+.type {
+    float: right;
+    margin-top: 14px;
+
 }
 h6 {
-    float: right;
+    margin: 0;
 }
 .typeamount {
     width: 100%;
+    text-align: left;
 }
 header {
     background-color: #00a2ed ;
+    width: 100%;
+    position: fixed;
     margin: auto;
-    padding: 0px 24px;
+    padding: 0px 20px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    height: 60px;
+  }
+.list-group {
+    border-radius: 10px;
+    width: 100%;
+ 
+}
+
+.entries {
+   margin-right: 10%; 
+   
+}
+
+.items {
+    padding: 10px;
+    float: right;
+    width: 100%;
+  
+    
+}
+.colleft {
+   width: 40%;
+   position: fixed;
+   margin-top: 70px;
+}
+.colright {
+    width: 50%;  
+    float: right; 
+    margin-top: 100px;
+    margin-right: 60px;
+    padding: 20px;
+    position: relative;
+   
+   
+}
+.flex-container {
+    display: flex;
+    margin-top: 50px;
+   
+   
+}
+
+.flex-child {
+    flex: 1;
+   
+
+ 
+} 
+
+.flex-child:first-child {
+    margin-right: 20px;
+
+} 
+.myChart {
+    position: fixed;
+}
+.flex-child.green {
+    display: grid;
+    height: 550px;
+    overflow: scroll;
+
+}
+.mobileLinks {
+    color: #E8FBFE;
+    float: right;
+    position: relative;
+    display: none;
+    
+}
+  
+.links {
+    float: left;
+  
+}
+.logo {
+    float: left;
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .flex-child.green {
+      width: 100%;
+      float: left;
+      position: fixed;
+      margin-top: 60%;
+
+    }
+    .myChart {
+        position: fixed;
+        float: left;
+    }
+    .mobileLinks {
+        display: inline;
+    }
+    .links {
+        display: none;
+    }
+    .menubar {
+        width: auto;
+    }
+    .entries {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
   }
