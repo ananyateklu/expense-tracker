@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Chart from "react-apexcharts";
 import Entry from "./entry";
 import "./components.css";
+import testData from "./testexpenseData.js";
+import Dchart from "./chart.jsx";
+// import moment from "moment";
 // import { GiKnifeFork } from 'react-icons/gi';
 // const Expense = (props) => (
 //   <tr>
@@ -17,69 +19,26 @@ export default class ExpensesList extends Component {
 
     this.deleteExpense = this.deleteExpense.bind(this);
     this.state = {
-      expenses: [],
-      series: [44, 55, 41],
-      options: {
-        chart: {
-          width: 380,
-          type: "donut",
-        },
-        plotOptions: {
-          pie: {
-            startAngle: -45,
-          },
-        },
-        dataLabels: {
-          enabled: false,
-        },
-        fill: {
-          type: "gradient",
-        },
-        legend: {
-          formatter: function (val, opts) {
-            return val + " - " + opts.w.globals.series[opts.seriesIndex];
-          },
-        },
-        title: {
-          text: "Expenses",
-        },
-        labels: ["Utilities", "Food", "Transportation", "School", "Shopping"],
-
-        theme: {
-          palette: "palette2", // upto palette10
-        },
-
-        responsive: [
-          {
-            breakpoint: 480,
-            options: {
-              chart: {
-                width: 360,
-              },
-              //   legend: {
-              //     position: 'bottom'
-              //   }
-            },
-          },
-        ],
-      },
+      expenses: testData,
+      testOne: 1223,
+      testTwo: 3455,
+      testThree: 288,
+      testFour: 233,
+      testFive: 912,
     };
-   
   }
-  
 
   componentDidMount() {
-    axios
-      .get("http://localhost:4000/expenses/")
-      .then((response) => {
-        this.setState({ expenses: response.data });
-        console.log(this.state.expenses);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    // axios
+    //   .get("http://localhost:4000/expenses/")
+    //   .then((response) => {
+    //     this.setState({ expenses: response.data });
+    //     console.log(this.state.expenses);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
   }
-  
 
   deleteExpense(id) {
     this.setState({
@@ -92,34 +51,53 @@ export default class ExpensesList extends Component {
   }
   createEntry(expenseone) {
     return (
-    <Entry 
-      key={expenseone._id}
-      expensetype={expenseone.expensetype}
-      itemname={expenseone.itemname}
-      amount={expenseone.amount}
-      description={expenseone.description}
-      icon={expenseone.icon}
-      date={expenseone.date}
-    />
+      <Entry
+        key={expenseone._id}
+        expensetype={expenseone.expensetype}
+        itemname={expenseone.itemname}
+        amount={expenseone.amount}
+        description={expenseone.description}
+        icon={expenseone.icon}
+        date={expenseone.date}
+      />
     );
   }
 
   render() {
+    const expenseItems = this.state.expenses.map((expenseone) => (
+      <Entry
+        key={expenseone._id}
+        expensetype={expenseone.expensetype}
+        itemname={expenseone.itemname}
+        amount={expenseone.amount}
+        description={expenseone.description}
+        icon={expenseone.icon}
+        date={expenseone.date}
+      />
+    ));
+
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col" style={{ padding: "20px" }}>
-            <Chart
-              options={this.state.options}
-              series={this.state.series}
-              type="donut"
-              width="380"
-            />
-          </div>
-          <div className="col">
-            {this.state.expenses.map(this.createEntry)}
-          </div>
+       
+        <div className="flex-container">
+
+        <div className="flex-child magenta">
+          <div className="myChart"> 
+             <Dchart
+                food={this.state.testOne}
+                utilities={this.state.testTwo}
+                transportation={this.state.testThree}
+                school={this.state.testFour}
+                shopping={this.state.testFive}
+              />
+              </div>
+       
         </div>
+        
+        <div className="flex-child green">
+          {/* {this.state.expenses.map(this.createEntry)} */}
+          {expenseItems}
+        </div>
+        
       </div>
     );
   }
