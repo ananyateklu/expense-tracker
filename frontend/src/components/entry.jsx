@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./components.css";
+import dateFormat from "dateformat";
 
 
 
@@ -8,28 +9,36 @@ export default class Entry extends Component {
         super(props)
         this.state = {
 
+
         }
   
     
     }
    
         render() {
+        
            return (
-            <div className="list-group">
-                <div className="list-group-item list-group-item-action flex-column align-items-start">
-                <div className="items">
-                    <div className="etype">
-                    <img alt="icon" src={this.props.icon}/>
+            <div className="entries">
+                 <div className="list-group">
+                    <div className="list-group-item ">
+                    <div className="items">
+                        <div className="etype">
+                        <img alt="icon" src={this.props.icon}/>
+                        </div>
+                        <div className="typeamount">
+                        <small className="type">$ {this.props.amount}</small>
+                        <h6 className="iname">{this.props.itemname}</h6>
+                    
+                        <small>{(dateFormat(this.props.date, "dddd dS mmmm "))}</small>
+                        
+                        </div>
+                    
                     </div>
-                    <div className="typeamount">
-                    <h5 className="iname">{this.props.itemname}</h5>
-                    <h6>$ {this.props.amount}</h6>
+                    
                     </div>
-                   
-                </div>
-                <small>{this.props.date}</small>
                 </div>
             </div>
+               
 
         );
     }
