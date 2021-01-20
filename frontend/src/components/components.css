@@ -33,8 +33,15 @@ header {
 }
 
 .entries {
-   margin-right: 10%; 
+
+
    
+}
+.stats {
+    width: 40%;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
 }
 
 .items {
@@ -44,7 +51,15 @@ header {
   
     
 }
-.colleft {
+.big-div {
+    background-color: white;
+    margin-right: 10%;
+    padding: 1%;
+    border-radius: 15px;
+    width: 70%;
+
+}
+/* .colleft {
    width: 40%;
    position: fixed;
    margin-top: 70px;
@@ -58,10 +73,11 @@ header {
     position: relative;
    
    
-}
+} */
 .flex-container {
     display: flex;
     margin-top: 50px;
+    position: relative;
    
    
 }
@@ -72,9 +88,16 @@ header {
 
  
 } 
+.myChart {
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 1%;
+}
 
-.flex-child:first-child {
-    margin-right: 20px;
+.flex-child.test {
+    height: 100px;
+    background-color: red;
+
 
 } 
 .myChart {
@@ -113,6 +136,7 @@ header {
 
     }
     .myChart {
+        background-color: transparent;
         position: fixed;
         float: left;
     }
@@ -128,5 +152,14 @@ header {
     .entries {
         margin-left: 2%;
         margin-right: 2%;
+    }
+    .myChart {
+        margin: 0;
+        width: 100%;
+
+    }
+    .big-div {
+        width: 100%;
+        position: absolute;
     }
   }

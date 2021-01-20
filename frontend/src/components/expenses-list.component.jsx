@@ -90,14 +90,20 @@ export default class ExpensesList extends Component {
                 shopping={this.state.testFive}
               />
               </div>
-       
+              
+              
         </div>
+       
         
         <div className="flex-child green">
-          {/* {this.state.expenses.map(this.createEntry)} */}
-          {expenseItems}
+          <div className = "big-div">
+            {/* {this.state.expenses.map(this.createEntry)} */}
+            {expenseItems}
+          </div>
+         
+          
         </div>
-        
+       
       </div>
     );
   }
