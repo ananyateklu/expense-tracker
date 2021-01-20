@@ -29,7 +29,7 @@ export default class Entry extends Component {
                         <small className="type">$ {this.props.amount}</small>
                         <h6 className="iname">{this.props.itemname}</h6>
                     
-                        <small>{(dateFormat(this.props.date, "dddd dS mmmm "))}</small>
+                        <small>{(dateFormat(this.props.date, "mmmm dS"))}</small>
                         
                         </div>
                     
