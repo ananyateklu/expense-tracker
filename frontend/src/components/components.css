@@ -18,7 +18,7 @@ h6 {
     text-align: left;
 }
 header {
-    background-color: #00a2ed ;
+    background-color: #E8FBFE ;
     width: 100%;
     position: fixed;
     margin: auto;
@@ -32,11 +32,6 @@ header {
  
 }
 
-.entries {
-
-
-   
-}
 .stats {
     width: 40%;
     background-color: white;
@@ -52,12 +47,23 @@ header {
     
 }
 .big-div {
-    background-color: white;
-    margin-right: 10%;
-    padding: 1%;
-    border-radius: 15px;
-    width: 70%;
+    background-color: #E8FBFE;
+    width: 500px;
+    margin-top: 60px;
+    z-index: -1;
 
+}
+.flex-child.green h5 {
+    font-weight: bold;
+    background-color: #E8FBFE;
+    width: 100%;
+    position: fixed;
+    font-size: 5mm;
+    color: #3b3d3d;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    
 }
 /* .colleft {
    width: 40%;
@@ -91,26 +97,36 @@ header {
 .myChart {
     background-color: white;
     border-radius: 15px;
-    margin-left: 1%;
+    margin-left: 60px;
+    margin-top: 30px;
+    position: absolute;
+    width: 430px;
+}
+.leftContainer {
+    width: 100%;
 }
 
-.flex-child.test {
+.mainInfo {
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 400px;
+    margin-left: 60px;
+    padding: 10px;
     height: 100px;
-    background-color: red;
+    width: 430px;
+    position: absolute;
 
-
-} 
-.myChart {
-    position: fixed;
+   
 }
 .flex-child.green {
     display: grid;
-    height: 550px;
-    overflow: scroll;
+    height: 556px;
+    overflow: auto;
+
 
 }
 .mobileLinks {
-    color: #E8FBFE;
+    color: black;
     float: right;
     position: relative;
     display: none;
@@ -119,6 +135,7 @@ header {
   
 .links {
     float: left;
+    color: black;
   
 }
 .logo {
@@ -142,6 +159,7 @@ header {
     }
     .mobileLinks {
         display: inline;
+        color: black;
     }
     .links {
         display: none;
@@ -161,5 +179,9 @@ header {
     .big-div {
         width: 100%;
         position: absolute;
+        margin-top: 0;
+    }
+    .mainInfo {
+        display: none;
     }
   }
