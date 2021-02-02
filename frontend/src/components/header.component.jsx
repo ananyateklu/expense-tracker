@@ -21,7 +21,7 @@ export default class Header extends Component {
           <Link className="links" to="/createincome">
             Cincome
           </Link>
-          <Link className="mobileLinks">
+          <Link className="mobileLinks" to="/">
             <Menu />
           </Link>
         </div>
