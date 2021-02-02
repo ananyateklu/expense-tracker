@@ -77,33 +77,31 @@ export default class ExpensesList extends Component {
     ));
 
     return (
-       
-        <div className="flex-container">
-
+      <div className="flex-container">
         <div className="flex-child magenta">
-          <div className="myChart"> 
-             <Dchart
+          <div className="leftContainer">
+            <div className="myChart">
+              <Dchart
                 food={this.state.testOne}
                 utilities={this.state.testTwo}
                 transportation={this.state.testThree}
                 school={this.state.testFour}
                 shopping={this.state.testFive}
               />
-              </div>
-              
-              
+            </div>
+            <div className="mainInfo">
+          </div>
+          </div>
         </div>
-       
-        
+
         <div className="flex-child green">
-          <div className = "big-div">
+        <h5>Transactions</h5>
+          <div className="big-div">
+            
             {/* {this.state.expenses.map(this.createEntry)} */}
             {expenseItems}
           </div>
-         
-          
         </div>
-       
       </div>
     );
   }
