@@ -42,7 +42,7 @@ export default class Dchart extends Component {
         title: {
           text: "Expenses",
         },
-        labels: ["Utilities", "Food", "Transportation", "School", "Shopping"],
+        labels: ["Utilities", "School", "Shopping", "Food", "Transportation"],
 
         theme: {
           palette: "palette2", // upto palette10

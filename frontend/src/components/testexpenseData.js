@@ -5,7 +5,7 @@ const testData = [
         date: "2020-09-20T01:43:19.417Z",
         description: "NaN",
         expensetype: "Food",
-        icon: "https://img.icons8.com/ios/50/000000/fish-and-vegetables.png",
+        icon: "https://img.icons8.com/fluent/48/000000/pizza.png",
         itemname: "Subway"
     },
     {
@@ -14,7 +14,7 @@ const testData = [
         date: "2020-09-20T01:43:19.417Z",
         description: "NaN",
         expensetype: "School",
-        icon: "https://img.icons8.com/ios-filled/50/000000/education.png",
+        icon: "https://img.icons8.com/cotton/50/000000/school-backpack--v2.png",
         itemname: "Tuition",
     },
     {
@@ -23,7 +23,7 @@ const testData = [
         date: "2020-09-20T01:43:19.417Z",
         description: "NaN",
         expensetype: "Shopping",
-        icon: "https://img.icons8.com/ios/50/000000/shopping-cart-loaded--v1.png",
+        icon:  "https://img.icons8.com/color/50/26e07f/shopping-cart--v2.png" ,
         itemname: "VideoGame",
     },
     {
@@ -32,7 +32,7 @@ const testData = [
         date: "2020-09-20T01:43:19.417Z",
         description: "NaN",
         expensetype: "Transportation",
-        icon: "https://img.icons8.com/ios/48/000000/people-in-car-side-view.png",
+        icon: "https://img.icons8.com/dusk/50/000000/car--v2.png",
         itemname: "Gas",
     },
     {
@@ -41,7 +41,7 @@ const testData = [
         date: "2020-09-20T01:43:19.417Z",
         description: "NaN",
         expensetype: "Shopping",
-        icon: "https://img.icons8.com/ios/50/000000/shopping-cart-loaded--v1.png",
+        icon: "https://img.icons8.com/color/50/26e07f/shopping-cart--v2.png",
         itemname: "IPad",
     },
     {
@@ -50,7 +50,7 @@ const testData = [
         date: "2020-09-20T01:43:19.417Z",
         description: "NaN",
         expensetype: "Food",
-        icon: "https://img.icons8.com/ios/50/000000/fish-and-vegetables.png",
+        icon: "https://img.icons8.com/fluent/48/000000/pizza.png",
         itemname: "Subway"
     },
     {
@@ -59,7 +59,7 @@ const testData = [
         date: "2020-09-20T01:43:19.417Z",
         description: "NaN",
         expensetype: "School",
-        icon: "https://img.icons8.com/ios-filled/50/000000/education.png",
+        icon: "https://img.icons8.com/cotton/50/000000/school-backpack--v2.png",
         itemname: "Tuition",
     },
     {
@@ -68,7 +68,7 @@ const testData = [
         date: "2020-09-20T01:43:19.417Z",
         description: "NaN",
         expensetype: "Shopping",
-        icon: "https://img.icons8.com/ios/50/000000/shopping-cart-loaded--v1.png",
+        icon: "https://img.icons8.com/color/50/26e07f/shopping-cart--v2.png",
         itemname: "VideoGame",
     },
     {
@@ -77,7 +77,7 @@ const testData = [
         date: "2020-09-20T01:43:19.417Z",
         description: "NaN",
         expensetype: "Transportation",
-        icon: "https://img.icons8.com/ios/48/000000/people-in-car-side-view.png",
+        icon: "https://img.icons8.com/dusk/50/000000/car--v2.png",
         itemname: "Gas",
     },
     {
@@ -86,7 +86,7 @@ const testData = [
         date: "2020-09-20T01:43:19.417Z",
         description: "NaN",
         expensetype: "Shopping",
-        icon: "https://img.icons8.com/ios/50/000000/shopping-cart-loaded--v1.png",
+        icon: "https://img.icons8.com/color/50/26e07f/shopping-cart--v2.png",
         itemname: "IPad",
     },
     {
@@ -95,7 +95,7 @@ const testData = [
         date: "2020-09-20T01:43:19.417Z",
         description: "NaN",
         expensetype: "Utilites",
-        icon: "https://img.icons8.com/ios/50/000000/maintenance.png",
+        icon: "https://img.icons8.com/color/50/000000/mechanic.png",
         itemname: "Water",
     },
     {
@@ -104,7 +104,7 @@ const testData = [
         date: "2020-09-20T01:43:19.417Z",
         description: "NaN",
         expensetype: "Food",
-        icon: "https://img.icons8.com/ios/50/000000/fish-and-vegetables.png",
+        icon: "https://img.icons8.com/fluent/48/000000/pizza.png",
         itemname: "McDonalds",
     }
 ]
