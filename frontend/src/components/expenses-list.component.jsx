@@ -78,8 +78,8 @@ export default class ExpensesList extends Component {
 
     return (
       <div className="flex-container">
-        <div className="flex-child magenta">
-          <div className="leftContainer">
+       
+     
             <div className="myChart">
               <Dchart
                 food={this.state.testOne}
@@ -91,18 +91,19 @@ export default class ExpensesList extends Component {
             </div>
             <div className="mainInfo">
           </div>
-          </div>
-        </div>
+        
+      
 
-        <div className="flex-child green">
-        <h5>Transactions</h5>
+      
+          <h5 className="transactions">Transactions</h5>
           <div className="big-div">
-            
+       
             {/* {this.state.expenses.map(this.createEntry)} */}
             {expenseItems}
           </div>
+          <img className="addexpense" src="https://img.icons8.com/cute-clipart/64/ffffff/add-property.png"/>
         </div>
-      </div>
+   
     );
   }
 }
