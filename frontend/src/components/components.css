@@ -1,9 +1,25 @@
-
+.logo {
+    width: 100px;
+    border-radius: 60px;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: fixed;
+}
+.logo img {
+    border-radius: 60px;
+}
 img {
     width: 65%;
     background-color: #E8FBFE ;
     padding: 5px;
     border-radius: 10px;
+}
+.head {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 150px;
+    background-color: #cbebf0 ;
 }
 .type {
     float: right;
@@ -14,7 +30,7 @@ h6 {
     margin: 0;
 }
 .typeamount {
-    width: 100%;
+    width: 75%;
     text-align: left;
 }
 header {
@@ -23,13 +39,22 @@ header {
     position: fixed;
     margin: auto;
     padding: 0px 20px;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
     height: 60px;
   }
 .list-group {
     border-radius: 10px;
     width: 100%;
  
+}
+.list-group-item {
+    border: 0.1mm solid #f0f4f5;
+}
+.typeamount img {
+    width: 27px;
+    position: absolute;
+    margin-left: 365px;
+    margin-top: 11px;
+
 }
 
 .stats {
@@ -46,23 +71,30 @@ header {
   
     
 }
+.sidebuttons {
+    margin-top: 150px;
+}
 .big-div {
     background-color: #E8FBFE;
-    width: 500px;
+    width: 530px;
     margin-top: 60px;
+    margin-left: 700px;
+    height: 430px;
     z-index: -1;
+    position: absolute;
+    scroll-behavior: smooth;
+    overflow: auto;
 
 }
-.flex-child.green h5 {
+.transactions{
     font-weight: bold;
     background-color: #E8FBFE;
-    width: 100%;
+    
     position: fixed;
     font-size: 5mm;
     color: #3b3d3d;
-    padding-top: 10px;
     padding-bottom: 13px;
-    padding-left: 15px;
+    margin-left: 700px;
     
 }
 /* .colleft {
@@ -97,26 +129,48 @@ header {
 .myChart {
     background-color: white;
     border-radius: 15px;
-    margin-left: 60px;
-    margin-top: 30px;
-    position: absolute;
+    margin-left: 190px;
+    margin-top: 67px;
+    position: fixed;
     width: 430px;
 }
 .leftContainer {
     width: 100%;
 }
 
+.income {
+    width: 80px;
+    border-radius: 25px;
+    padding: 28px;
+    background-color:  #3f8acf;
+   
+}
+
+.expenses {
+    width: 80px;
+    border-radius: 25px;
+    padding: 28px;
+    background-color:  #3f8acf;
+   
+}
+
 .mainInfo {
     background-color: white;
     border-radius: 15px;
     margin-top: 400px;
-    margin-left: 60px;
+    margin-left: 190px;
     padding: 10px;
     height: 100px;
     width: 430px;
-    position: absolute;
+    position: fixed;
 
    
+}
+.addexpense {
+    width: 80px;
+    position: fixed;
+    right: 80px;
+    bottom: 60px;
 }
 .flex-child.green {
     display: grid;
@@ -134,14 +188,13 @@ header {
 }
   
 .links {
-    float: left;
-    color: black;
+    color: white;
+
+
   
 }
-.logo {
-    float: left;
-    color: black;
-}
+
+
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -183,5 +236,15 @@ header {
     }
     .mainInfo {
         display: none;
+    }
+    .typeamount {
+        width: 65%;
+    }
+    .typeamount img {
+        width: 27px;
+        position: absolute;
+        margin-left: 205px;
+        margin-top: 11px;
+    
     }
   }
