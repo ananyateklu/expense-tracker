@@ -20,6 +20,7 @@ img {
     vertical-align: middle;
     width: 150px;
     background-color: #c9e3e7 ;
+    padding: 5px;
 }
 .type {
     float: right;
@@ -31,6 +32,7 @@ h6 {
 }
 .typeamount {
     width: 75%;
+    padding-right: 20px;
     text-align: left;
 }
 header {
@@ -48,11 +50,13 @@ header {
 }
 .list-group-item {
     border: 0.1mm solid #f0f4f5;
+    width: 80%;
 }
-.typeamount img {
+.remove {
     width: 27px;
     position: absolute;
-    margin-left: 365px;
+    right: 25px;
+    margin-left: 20px;
     margin-top: 11px;
 
 }
@@ -75,9 +79,9 @@ header {
     margin-top: 150px;
 }
 .big-div {
-    background-color: #E8FBFE;
-    width: 530px;
-    margin-top: 60px;
+    background-color: #e2f5f8;
+    width: 50%;
+    margin-top: 80px;
     margin-left: 700px;
     border-radius: 20px;
     height: 430px;
@@ -89,12 +93,11 @@ header {
 }
 .transactions{
     font-weight: bold;
-    background-color: #E8FBFE;
-    
+    background-color: #e2f5f8;
+    margin-top: 40px;
     position: fixed;
     font-size: 5mm;
     color: #3b3d3d;
-    padding-bottom: 13px;
     margin-left: 700px;
     
 }
@@ -131,27 +134,50 @@ header {
     background-color: #f8fcff;
     border-radius: 15px;
     margin-left: 190px;
-    margin-top: 67px;
+    margin-top: 85px;
     position: fixed;
     width: 430px;
 }
 .leftContainer {
     width: 100%;
 }
+.title {
+  margin-left: 190px;
+}
+.title h3 {
+    font-size: larger;
+    font-weight: 700;
+    display: inline;
+
+}
+.title button {
+    float: right;
+}
 
 .income {
+    width: 30px;
+    border-radius: 4px;
+    background-color:  transparent;
+    position: fixed;
+    left: 15px;
+   
+}
+
+/* .addexpense {
     width: 80px;
     border-radius: 25px;
     padding: 20px;
     background-color:  transparent;
    
-}
+} */
 
 .expenses {
-    width: 80px;
-    border-radius: 25px;
-    padding: 28px;
-    background-color:  #3f8acf;
+    width: 30px;
+    border-radius: 4px;
+    background-color:  transparent;
+    position: fixed;
+    left: 15px;
+
    
 }
 
@@ -167,11 +193,11 @@ header {
 
    
 }
-.addexpense {
+.addexpenses {
     width: 80px;
     position: fixed;
     right: 80px;
-    bottom: 60px;
+    bottom: 50px;
 }
 .flex-child.green {
     display: grid;
@@ -190,9 +216,12 @@ header {
   
 .links {
     color: white;
-
+    padding-bottom: 5px;
 
   
+}
+.links h6 {
+    display: inline;
 }
 
 
