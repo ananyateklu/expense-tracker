@@ -53,7 +53,7 @@ export default class Dchart extends Component {
             breakpoint: 480,
             options: {
               chart: {
-                width: 360,
+                width: 380,
               },
               //   legend: {
               //     position: 'bottom'

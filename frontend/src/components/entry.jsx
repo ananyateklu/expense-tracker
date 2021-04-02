@@ -26,9 +26,10 @@ export default class Entry extends Component {
                         <div className="etype">
                         <img alt="icon" src={this.props.icon}/>
                         </div>
+                        <img className="remove" alt="remove" src="https://img.icons8.com/fluent-systems-regular/50/4a90e2/filled-trash.png"/>
                         <div className="typeamount">
                         <small className="type">$ {this.props.amount}</small>
-                        <img src="https://img.icons8.com/fluent-systems-regular/50/4a90e2/filled-trash.png"/>
+                       
                         <h6 className="iname">{this.props.itemname}</h6>
                     
                         <small>{(dateFormat(this.props.date, "mmmm dS"))}</small>
