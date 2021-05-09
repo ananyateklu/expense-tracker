@@ -1,16 +1,16 @@
 .logo {
     width: 100px;
-    border-radius: 60px;
-    margin-top: 30px;
-    margin-left: 20px;
+    margin-top: 47px;
+    margin-left: 47px;
     position: fixed;
 }
+
 .logo img {
-    border-radius: 60px;
+    width: 75%;
 }
+
 img {
     width: 65%;
-    background-color: #E8FBFE ;
     padding: 5px;
     border-radius: 10px;
 }
@@ -18,8 +18,8 @@ img {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    width: 150px;
-    background-color: #c9e3e7 ;
+    width: 200px;
+    background-color: #001d4d ;
     padding: 5px;
 }
 .type {
@@ -48,8 +48,16 @@ header {
     width: 100%;
  
 }
+.linkAdd button {
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 7px 20px 7px 20px;
+    border-radius: 7px;
+    
+}
+
 .list-group-item {
-    border: 0.1mm solid #f0f4f5;
+    border: 0.1mm solid #dbdfe0ef;
     width: 80%;
 }
 .remove {
@@ -69,22 +77,19 @@ header {
 }
 
 .items {
-    padding: 10px;
     float: right;
     width: 100%;
   
     
 }
 .sidebuttons {
-    margin-top: 150px;
+    margin-top: 200px;
 }
 .big-div {
-    background-color: #e2f5f8;
     width: 50%;
     margin-top: 80px;
     margin-left: 700px;
     border-radius: 20px;
-    height: 430px;
     z-index: -1;
     position: absolute;
     scroll-behavior: smooth;
@@ -93,12 +98,12 @@ header {
 }
 .transactions{
     font-weight: bold;
-    background-color: #e2f5f8;
-    margin-top: 40px;
     position: fixed;
     font-size: 5mm;
     color: #3b3d3d;
-    margin-left: 700px;
+    margin-left: 720px;
+    background-color: white;
+    z-index: 1000;
     
 }
 /* .colleft {
@@ -120,6 +125,7 @@ header {
     display: flex;
     margin-top: 50px;
     position: relative;
+    margin-left: 80px;
    
    
 }
@@ -143,6 +149,7 @@ header {
 }
 .title {
   margin-left: 190px;
+  position: fixed;;
 }
 .title h3 {
     font-size: larger;

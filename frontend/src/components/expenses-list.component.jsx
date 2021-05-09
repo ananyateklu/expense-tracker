@@ -37,7 +37,7 @@ export default class ExpensesList extends Component {
     //   })
     //   .catch((error) => {
     //     console.log(error);
-    //   });
+    //   }); 
   }
 
   deleteExpense(id) {
@@ -90,8 +90,6 @@ export default class ExpensesList extends Component {
             shopping={this.state.testFive}
           />
         </div>
-        <div className="mainInfo"></div>
-
         <h5 className="transactions">Transactions</h5>
         <div className="big-div">
           {/* {this.state.expenses.map(this.createEntry)} */}
